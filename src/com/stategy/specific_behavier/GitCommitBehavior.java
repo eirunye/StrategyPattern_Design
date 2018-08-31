@@ -10,6 +10,6 @@ import com.stategy.behavior.SubmissionBehavior;
 public class GitCommitBehavior implements SubmissionBehavior {
     @Override
     public void commit() {
-        System.out.println("Git提交周报行为");
+        System.out.println("新增的Git提交周报行为");
     }
 }

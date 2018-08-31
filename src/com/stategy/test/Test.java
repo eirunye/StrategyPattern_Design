@@ -8,7 +8,7 @@ import com.stategy.specific_character.ReceptionSister;
 /**
  * Author Eirunye
  * Created by on 2018/8/31.
- * Describe
+ * Describe 测试
  */
 public class Test {
 
