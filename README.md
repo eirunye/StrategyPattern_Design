@@ -1,5 +1,3 @@
-# 策略模式
-
 # 简介
 
 1.学习本篇博文，我们知道在什么场景下使用策略模式。
@@ -35,11 +33,12 @@
 
 ## 进入代码分析
 
-我们先来看一下这个UML类图进行分析
+> 我们先来看一下这个UML类图进行分析
+
+![stategy.png](https://upload-images.jianshu.io/upload_images/3012005-b7dcbc207bffa21b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
 
 
-
-具体实现步骤：
+> 具体实现步骤
 
 1.定义一个行为“算法”，该行为“算法”是一个抽象类或者是接口
 2.各种独立的行为去实现该行为“算法”接口
@@ -49,7 +48,7 @@
 6.具体的角色继承超类角色，并实现抽象方法
 
 
-### 具体代码
+> 具体代码分析
 
 SubmissionBehavior 接口
 ```
@@ -126,7 +125,7 @@ public class Coder extends Character{
     }
 }
 ```
-### 测试
+> 测试
 
 Test.class
 ```
@@ -154,7 +153,7 @@ public class Test {
     }
 }
 ```
-输出结果：
+> 输出结果：
 ```
 C:\Java\jdk1.8.0_161\bin\...
 SVN提交行为
@@ -163,7 +162,7 @@ SVN提交行为
 
 Process finished with exit code 0
 ```
-### 下载
+## 下载
 
 **[策略模式案例代码](https://github.com/eirunye/StrategyPattern_Design)**
 
@@ -173,14 +172,19 @@ Process finished with exit code 0
 我们在设计开发的时候一定要“多用组合，少用继承”。
 针对接口变成，而不针对实现编程。
 
-优点
+> 优点
 
 1.策略模式提供了管理相关的算法族的办法。策略类的等级结构定义了一个算法或行为族。通过使用继承抽象超类可以把公共的代码转移到抽象超类父类里面，从而避免重复的代码。
 2.通过实现接口的方式定义具体的行为“算法”，从而减少子类继承父类相互混淆的行为。
 3.使用策略模式可以避免使用多重条件转移语句，动态的改变行为，而各个具体角色行为“算法”相互独立。
 
-缺点
+> 缺点
 
 1.客户端必须知道所有的具体角色，并决定使用哪个算法族，这样在设计开始时是需要花费时间是封装“算法”族的，策略模式只适用于客户端知道所有的算法或行为的情况。
 2.策略模式造成很多具体的角色，每个具体角色就得创建一个新的类，这样类无法相互联系，所以无法共享。
 
+# [我的GitHub博客](https://eirunye.github.io/)
+
+### [设计模式](https://eirunye.github.io/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/)
+
+大家可以进入这里学习**[设计模式](https://eirunye.github.io/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/)**
